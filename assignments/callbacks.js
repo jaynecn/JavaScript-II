@@ -8,13 +8,15 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   
   function firstItem(arr, cb) {
     // firstItem passes the first item of the given array to the callback function.
-  }
+  }*/
+  // function firstItem(arr, callBack) {
+  //   return callBack(arr);
 
   // Potential Solution:
 
   // Higher order function using "cb" as the call back
-  function firstItem(arr, cb) {
-    return cb(arr[0]);
+  function firstItem(arr, callBack) {
+    return callBack(arr[0]);
   }
 
   // Function invocation 
@@ -22,7 +24,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
     console.log(first)
   });
 
-*/
+
 
 
 function getLength(arr, cb) {
