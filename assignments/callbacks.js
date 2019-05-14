@@ -15,8 +15,8 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // Potential Solution:
 
   // Higher order function using "cb" as the call back
-  function firstItem(arr, callBack) {
-    return callBack(arr[0]);
+  function firstItem(arr, cb) {
+    return cb(arr[0]);
   }
 
   // Function invocation 
