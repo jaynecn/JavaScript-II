@@ -66,10 +66,12 @@ multiplyNums(2, 3, (callBack) => {
 
 
 function contains (item, list, cb) {
-  if (item === list[i]) {
-    return cb(list[i]);
-    }
-}
+  for (let i = 0; i < list.length; i++) {
+    if (item === list[i])  {
+      return cb(true);
+    } 
+  }
+  }  
 
 contains('Gum', items, (callBack) => {
 console.log(callBack);
